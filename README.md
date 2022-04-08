@@ -31,11 +31,11 @@ Users should be able to:
 
 DESKTOP DESIGN
 
-![](./active-states.jpg)
+![](design/active-states.jpg)
 
 MOBILE DESIGN
 
-![](mobile-design.jpg)
+![](design/mobile-design.jpg)
 
 ### Links
 
