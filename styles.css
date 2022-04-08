@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;700&display=swap');
+:root {
+	--font: 'Kumbh Sans';
+	--primary-text: hsl(238, 29%, 16%);
+	--hover-text: hsl(14, 88%, 65%);
+	--secundary-text1: hsl(237, 12%, 33%);
+	--secundary-text2: hsl(240, 6%, 50%);
+	--bg-body-color1: hsl(273, 75%, 66%);
+	--bg-body-color2: hsl(240, 73%, 65%);
+	--bg-template: linear-gradient(180deg, hsl(273, 75%, 66%) , hsl(240, 73%, 65%));
+	--color-dividers: hsl(250, 10%, 90%);
+	--bg-button: white;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: var(--font);
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background: var(--bg-template);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	color: var(--primary-text);
+}
+
+p {
+	display: none;
+	color: var(--secundary-text1);
+	margin: 0.3rem;
+	padding: 0;
+	font-size: 12px;
+}
+
+.main-container {
+	display: flex;
+	width: 62%;
+	height: 70%;
+	background: white;
+	margin: auto;
+	border-radius: 1rem;
+	overflow: hidden;
+	box-shadow: 0px 15px 34px 1px rgba(0, 0, 0, 0.49);
+	-webkit-box-shadow: 0px 15px 34px 1px rgba(0, 0, 0, 0.49);
+}
+
+.container-left {
+	width: 50%;
+	height: 100%;
+}
+
+.container-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	width: 50%;
+	height: 100%;
+	gap: 0.8rem;
+	padding: 4rem 4rem 0 2rem;
+	overflow: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.container-right::-webkit-scrollbar {
+ 	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.container-right {
+ 	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+
+.faq-header {
+	margin-bottom: 1rem;
+	font-weight: bold;
+}
+
+.faq-button {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.faq-container button {
+	width: 100%;
+	background: var(--bg-button);
+	border: none;
+	cursor: pointer;
+}
+
+.faq-container button:hover {
+	color: var(--hover-text);
+}
+
+/*Important!!! you need to use position propertie to solve the overlap for the @ box svg image and use relative values in this case I used %*/
+#img-one {
+	width: 13%;
+	height: 28%;
+	position: absolute;
+	z-index: 3;
+	right: 74.5%;
+	top: 43%;
+}
+
+#img-two {
+	width: 230%;
+	height: 190%;
+	position: relative;
+	z-index: 1;
+	right: 135%;
+	bottom: 58%;
+}
+
+#img-three {
+	width: 118%;
+	height: 75%;
+	position: relative;
+	z-index: 2;
+	bottom: 178%;
+	right: 22%;
+}
+
+#mobile-img1, #mobile-img2 {
+	display: none;
+}
+
+.dividers {
+	width: 100%;
+	border-top: 1px solid var(--color-dividers);
+}
+
+@media only screen and (max-width: 375px) {
+
+	#mobile-img1 {
+		display: block;
+		width: 55%;
+		height: 14%;
+		position: absolute;
+		top: 15%;
+		z-index: 2;
+	}
+
+	#mobile-img2 {
+		display: block;
+		width: 55%;
+		height: 40%;
+		position: absolute;
+		bottom: 67%;
+		z-index: 3;
+	}
+
+	.main-container {
+		width: 75%;
+		overflow: scroll;
+	}
+
+	/* Hide scrollbar for Chrome, Safari and Opera */
+	.main-container::-webkit-scrollbar {
+	 	display: none;
+	}
+
+	/* Hide scrollbar for IE, Edge and Firefox */
+	.main-container {
+	 	-ms-overflow-style: none;  /* IE and Edge */
+		scrollbar-width: none;  /* Firefox */
+	}
+
+	.container-left, #img-one { 
+		display: none;
+	}
+
+	.container-right {
+		width: 100%;
+		height: 100%;
+		margin: 6.5rem auto auto auto;
+		padding: 0.8rem;
+		overflow: scroll;
+	}
+
+	.faq-header {
+		text-align: center;
+	}
+
+	.faq-button {
+		font-size: 0.72rem;
+	}
+
+	.faq-container button:hover {
+	color: var(--primary-text);
+	}
+
+	p {
+		font-size: 0.72rem;
+	}
+}
