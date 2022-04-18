@@ -214,12 +214,11 @@ button:hover {
 		height: 20%;
 	}
 
-	.contenedor-botones {
+	.contenedor-respuesta {
 		display: flex;
 		flex-direction: column;
 		justify-content: start;
-		width: 80%;
-		overflow-y: scroll;
+		width: 100%;
 		gap: 0.6rem;
 	}
 
