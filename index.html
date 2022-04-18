@@ -1,56 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <title>Frontend Mentor | FAQ Accordion Card</title>
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Frontend Mentor | FAQ Accordion Card</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- mobile images will be display: none and only will be visible in 375px screen size,  @box have to be outside the container "contenedor" -->
-    <img src="images/illustration-box-desktop.svg" alt="" id="img-one">
-    <img src="images/bg-pattern-mobile.svg" alt="" id="mobile-img1">
-    <img src="images/illustration-woman-online-mobile.svg" alt="" id="mobile-img2">
-    <!-- main container will have two container with 50% of width size each one, one for the images and other for the faq section -->
-    <div class="main-container">
-        <div class="container-left">
-            <img src="images/bg-pattern-desktop.svg" alt="" id="img-two">
-            <img src="images/illustration-woman-online-desktop.svg" alt="" id="img-three">
-        </div>
-        <div class="container-right">
-            <h1 class="faq-header">FAQ</h1>
-            <div class="faq-container">
-                <button class="faq-button">How many team members can I invite?<span><img class="icon" src="images/icon-arrow-down.svg" alt=""></span></button>
-            </div>
-                <p class="p-faq">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
-                <div class="dividers"></div>
-            
-            <div class="faq-container">
-                <button class="faq-button">What is the maximum file upload size?<span><img class="icon" src="images/icon-arrow-down.svg" alt=""></span></button>
-            </div>
-                <p class="p-faq">No more than 2GB. All files in your account must fit your allotted storage space.</p>
-                <div class="dividers"></div>
-            
-            <div class="faq-container">
-                <button class="faq-button">How do I reset my password?<span><img class="icon" src="images/icon-arrow-down.svg" alt=""></span></button>
-            </div>
-                <p class="p-faq">Click “Forgot password” from the login page or “Change password” from your profile page.A reset link will be emailed to you.</p>
-                <div class="dividers"></div>
-
-            <div class="faq-container">
-                <button class="faq-button">Can I cancel my subscription?<span><img class="icon" src="images/icon-arrow-down.svg" alt=""></span></button>
-            </div>
-                <p class="p-faq">Yes! Send us a message and we’ll process your request no questions asked.</p>
-                <div class="dividers"></div>
-
-            <div class="faq-container">
-                <button class="faq-button">Do you provide additional support?<span><img class="icon" src="images/icon-arrow-down.svg" alt=""></span></button>
-            </div>
-                <p class="p-faq">hat and email support is available 24/7. Phone lines are open during normal business hours</p>
-                <div class="dividers"></div>
-        </div>
-    </div>
-    <script src="main.js"></script>
+	<div class="contenedor-principal">
+		<img id="box" src="images/illustration-box-desktop.svg" alt="">
+		<div class="contenedor-izq">
+			<img id="bg-desktop" src="images/bg-pattern-desktop.svg" alt="">
+			<img id="woman" src="images/illustration-woman-online-desktop.svg" alt="">
+		</div>
+		<div class="contenedor-der">
+			<div class="contenedor-img">
+				<img id="bg-mobile" src="images/bg-pattern-mobile.svg" alt="">
+				<img id="woman-mobile" src="images/illustration-woman-online-mobile.svg" alt="">
+			</div>
+			<div class="contenedor-titulo">
+				<h1>FAQ</h1>
+			</div>
+			<div class="contenedor-botones">
+				<div class="contenedor-respuesta">
+					<button class="btn">¿Que es CSS o Cascading Style Sheets? <img class="icon" src="images/icon-arrow-down.svg" alt=""></button>
+					<p class="respuesta">Es el lenguaje (si como lees, lenguaje ¬¬) de estilos de la web estandarizado por la W3C, utilizado por los desarrolladores para diseñar de manera más elegante y atractiva el contenido que es creado a través del documento html, es pocas palabras la presentación de la web.</p>
+				</div>
+				<div class="divisores"></div>
+				<div class="contenedor-respuesta">
+					<button class="btn">¿Por qué aprender CSS? <img class="icon" src="images/icon-arrow-down.svg" alt=""></button>
+					<p class="respuesta">El fundamento principal de CSS tiene que ver con la parte visual. Dado que los humanos somos seres visuales por naturaleza, aprender a usar CSS en tus proyectos puede lograr que tu web sea atractiva y amigable de ver (sin dejar de un lado la funcionalidad).</p>
+				</div>				
+				<div class="divisores"></div>
+				<div class="contenedor-respuesta">
+					<button class="btn">¿Cómo se trabaja CSS? <img class="icon" src="images/icon-arrow-down.svg" alt=""></button>
+					<p class="respuesta">Existen dos formas de añadir CSS a tu archivo html, la primera agregando la etiqueta style dentro de la etiqueta head en tu archivo html para usar la sintaxis de css o bien puedes usar lo que se llama inline style que es agregando sintaxis css directamente a tus elementos o etiquetas, o utilizando un archivo externo con extensión .css en donde coloques todos los estilos que quieras usar. Está última es la opción más recomendada pero todo va a depender de la complejidad y el tamaño de tu proyecto.</p>
+				</div>
+				<div class="divisores"></div>
+				<div class="contenedor-respuesta">
+					<button class="btn">¿Existen libros sobre CSS? <img class="icon" src="images/icon-arrow-down.svg" alt=""></button>
+					<p class="respuesta">Sí, puedes comenzar con un libro llamado "HTML & CSS" de Jhon Duckett que tiene un contenido muy visual y explícito para entender los fundamentos básicos sobre este interesante lenguaje.</p>
+				</div>
+				<div class="divisores"></div>
+				<div class="contenedor-respuesta">
+					<button class="btn">¿Existen frameworks para CSS? <img class="icon" src="images/icon-arrow-down.svg" alt=""></button>
+					<p class="respuesta">Existen varios frameworks que han tenido una gran popularidad por su forma de "ahorrar código" y su "fácil entendimiento", entre ellos está bootstrap, bulma y tailwind.</p>
+				</div>
+				<div class="divisores"></div>
+			</div>
+		</div>
+	</div>
+<script src="main.js"></script>
 </body>
 </html>
