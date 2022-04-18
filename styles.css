@@ -215,8 +215,12 @@ button:hover {
 	}
 
 	.contenedor-botones {
-		width: 100%;
-		height: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		width: 80%;
+		overflow-y: scroll;
+		gap: 0.6rem;
 	}
 
 }
